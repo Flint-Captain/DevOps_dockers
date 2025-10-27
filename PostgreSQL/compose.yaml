@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres
+#    image: postgres:13.3
+    environment:
+      POSTGRES_DB: "habrdb1"
+      POSTGRES_USER: "habrpguser1"
+      POSTGRES_PASSWORD: "pgpwd4habr1"
+    volumes:
+      - .:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"

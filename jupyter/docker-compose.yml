@@ -1,0 +1,15 @@
+version:  '3'
+services:
+  datascience-notebook:
+      image:    jupyter/datascience-notebook
+      volumes:
+        - ~/DevOps/dockers/jupyter:/home/jovyan/work
+        - ~/DevOps/dockers/jupyter/datasets:/home/jovyan/work/datasets
+        - ~/DevOps/dockers/jupyter/modules:/home/jovyan/work/modules
+#        - ${LOCAL_SSL_CERTS}:/etc/ssl/notebook
+      ports:
+        - 8888:8888
+      container_name:   jupyter_notebook
+#      command: "start-notebook.sh \
+#        --NotebookApp.password=${ACCESS_TOKEN} \
+#        --NotebookApp.certfile=/etc/ssl/notebook/jupyter.pem"

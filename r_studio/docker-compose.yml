@@ -1,0 +1,24 @@
+services:
+    rstudio:
+     image: rocker/rstudio:4
+
+     container_name: rstudio
+
+
+     ports:
+     - "8787:8787"
+
+     environment:
+
+     - PASSWORD=lab
+     - USERID=1000
+     - GROUPD=1000
+
+     - TZ=Europe/Samara
+
+     volumes:
+     - /home/flint/DevOps/dockers/r_studio:/home/rstudio/workspace
+     - /home/flint/DevOps/dockers/r_studio/.rstudio_config:/home/rstudio/.config/rstudio
+
+     restart: unless-stopped
+
