@@ -3,9 +3,9 @@ services:
   datascience-notebook:
       image:    jupyter/datascience-notebook
       volumes:
-        - ~/DevOps/dockers/jupyter:/home/jovyan/work
-        - ~/DevOps/dockers/jupyter/datasets:/home/jovyan/work/datasets
-        - ~/DevOps/dockers/jupyter/modules:/home/jovyan/work/modules
+        - ~/DevOps/DevOps_dockers/jupyter:/home/jovyan/work
+        - ~/DevOps/DevOps_dockers/jupyter/datasets:/home/jovyan/work/datasets
+        - ~/DevOps/DevOps_dockers/jupyter/modules:/home/jovyan/work/modules
 #        - ${LOCAL_SSL_CERTS}:/etc/ssl/notebook
       ports:
         - 8888:8888

@@ -17,8 +17,8 @@ services:
      - TZ=Europe/Samara
 
      volumes:
-     - /home/flint/DevOps/dockers/r_studio:/home/rstudio/workspace
-     - /home/flint/DevOps/dockers/r_studio/.rstudio_config:/home/rstudio/.config/rstudio
+     - /home/flint/DevOps/DevOps_dockers/r_studio:/home/rstudio/workspace
+     - /home/flint/DevOps/DevOps_dockers/r_studio/.rstudio_config:/home/rstudio/.config/rstudio
 
      restart: unless-stopped
 
