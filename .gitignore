@@ -1,6 +1,6 @@
-/home/flint/DevOps/DevOps_dockers/mysql/data/
-/home/flint/DevOps/DevOps_dockers/mysql/old/
-/home/flint/DevOps/DevOps_dockers/jupyter/datasets/
-/home/flint/DevOps/DevOps_dockers/jupyter/modules/
-/home/flint/DevOps/DevOps_dockers/r_studio/.rstudio_config/
+/mysql/data/
+/mysql/old/
+/jupyter/datasets/
+/jupyter/modules/
+/r_studio/.rstudio_config/
 
