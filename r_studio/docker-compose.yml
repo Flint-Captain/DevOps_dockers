@@ -1,3 +1,4 @@
+# version: "3"
 services:
     rstudio:
      image: rocker/rstudio:4
@@ -20,5 +21,5 @@ services:
      - /home/flint/DevOps/DevOps_dockers/r_studio:/home/rstudio/workspace
      - /home/flint/DevOps/DevOps_dockers/r_studio/.rstudio_config:/home/rstudio/.config/rstudio
 
-     restart: unless-stopped
 
+     restart: always

@@ -1,4 +1,4 @@
-#version:  '3'
+# version: "3"
 services:
   datascience-notebook:
       image:    jupyter/datascience-notebook
@@ -13,3 +13,5 @@ services:
 #      command: "start-notebook.sh \
 #        --NotebookApp.password=${ACCESS_TOKEN} \
 #        --NotebookApp.certfile=/etc/ssl/notebook/jupyter.pem"
+
+      restart: always
