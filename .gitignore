@@ -3,4 +3,6 @@
 /jupyter/datasets/
 /jupyter/modules/
 /r_studio/.rstudio_config/
+.private.ini
+
 
